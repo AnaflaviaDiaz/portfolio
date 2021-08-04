@@ -1,0 +1,13 @@
+.Card {
+  border-radius: 8px;
+  padding: 42px;
+  margin: 60px 0;
+
+  li {
+    margin-bottom: 12px;
+  }
+
+  ::marker {
+    font-size: 1.2em;
+  }
+}

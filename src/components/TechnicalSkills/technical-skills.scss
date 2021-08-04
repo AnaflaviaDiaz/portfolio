@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+
+.TechnicalSkills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $nude100;
+  padding-bottom: 24px;
+
+  h2 {
+    color: white;
+    margin: 24px 0;
+  }
+
+  &__card {
+    background-color: white;
+    border: 1px solid $gray100;
+    padding: 42px;
+    margin: 12px 0;
+    width: 10rem;
+
+    ::marker {
+      color: $nude100;
+    }
+  }
+}

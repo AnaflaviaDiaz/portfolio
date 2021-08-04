@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+
+.Projects {
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $nude300;
+
+  h2 {
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  &__mobile {
+    width: 20rem;
+    margin-bottom: 24px;
+  }
+}

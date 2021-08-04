@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.Presentation {
+  height: 100vh;
+  background-color: $nude200;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    margin-bottom: 12px;
+  }
+}
