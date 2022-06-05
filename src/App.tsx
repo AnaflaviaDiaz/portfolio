@@ -1,20 +1,23 @@
 import React from "react";
-import "./App.scss";
+
 import { Presentation } from "./components/Presentation";
 import { Projects } from "./components/Projects";
 import { SoftSkills } from "./components/SoftSkills";
 import { TechnicalSkills } from "./components/TechnicalSkills";
+import { Toolbar } from "./components/Toolbar";
+import "./App.scss";
 
 function App() {
   return (
-    <div>
-      <Presentation />
+    <>
+      <Toolbar />
       <Projects />
+      <Presentation />
       <TechnicalSkills />
       <SoftSkills />
 
       {/* falta el contacto y modificar los colores */}
-    </div>
+    </>
   );
 }
 

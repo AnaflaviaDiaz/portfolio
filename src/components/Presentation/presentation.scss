@@ -1,19 +1,37 @@
-@import '../../styles/variables';
-
 .Presentation {
   height: 100vh;
-  background-color: $nude200;
-  color: white;
+  // background-color: $secondary500;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
-  h1 {
+  &__nameContainer {
+    background-color: white;
+    // color: $secondary300;
     margin-bottom: 24px;
+    padding: 24px 18px;
+    border-radius: 0 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    h1 {
+      margin-bottom: 24px;
+      font-weight: 500;
+      font-size: 42px;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-weight: 500;
+      font-size: 30px;
+    }
   }
 
-  h2 {
-    margin-bottom: 12px;
+  &__imageContainer {
+    background-color: white;
+    padding: 50px;
+    border-radius: 0 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 }

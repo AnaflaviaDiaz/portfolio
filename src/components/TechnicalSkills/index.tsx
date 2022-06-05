@@ -32,7 +32,7 @@ const technicalBasicSkillList: string[] = [
 export const TechnicalSkills = () => {
   return (
     <div className="TechnicalSkills">
-      <h2>Habilidades Técnicas</h2>
+      <h1>Habilidades Técnicas</h1>
       <Card className="TechnicalSkills__card">
         <ul>
           {technicalBasicSkillList.map((technicalBasicSkill, index) => (

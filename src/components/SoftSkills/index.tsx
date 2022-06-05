@@ -14,7 +14,7 @@ const softSkillList: string[] = [
 export const SoftSkills = () => {
   return (
     <div className="SoftSkills">
-      <h2>Habilidades Blandas</h2>
+      <h1>Habilidades Blandas</h1>
       <Card className="SoftSkills__card">
         <ul>
           {softSkillList.map((softSkill, index) => (

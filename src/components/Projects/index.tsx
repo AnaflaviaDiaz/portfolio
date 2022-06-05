@@ -25,7 +25,7 @@ export const Projects = () => {
 
   return (
     <div className="Projects">
-      <h2>Proyectos</h2>
+      <h1>Proyectos</h1>
 
       <div className="Projects__list">
         {projectList.map(({ src, alt, url }, index) => (

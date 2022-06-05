@@ -1,23 +1,21 @@
-@import '../../styles/variables';
-
 .SoftSkills {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: $nude200;
+  // background-color: $nude200;
 
-  h2 {
+  h1 {
     color: white;
   }
 
   &__card {
     background-color: white;
-    border: 1px solid $gray100;
+    // border: 1px solid $gray100;
 
     ::marker {
-      color: $nude200;
+      // color: $nude200;
     }
   }
 }
