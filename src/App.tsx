@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Presentation } from "./components/Presentation";
+import { AboutMe } from "./components/AboutMe";
 import { Projects } from "./components/Projects";
 import { SoftSkills } from "./components/SoftSkills";
 import { TechnicalSkills } from "./components/TechnicalSkills";
@@ -11,8 +11,8 @@ function App() {
   return (
     <>
       <Toolbar />
+      <AboutMe />
       <Projects />
-      <Presentation />
       <TechnicalSkills />
       <SoftSkills />
 

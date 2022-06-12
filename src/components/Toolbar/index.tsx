@@ -23,13 +23,13 @@ export const Toolbar = () => {
   return (
     <header className="toolbar">
       <nav>
-        <div className="toolbar__navbar">
+        <aside className="toolbar__navbar">
           <button className="toolbar__navbar--menu" onClick={openSidebar}>
             <FontAwesomeIcon icon={faBars} size="2x" />
           </button>
 
           <a href="#!" className="toolbar__navbar--logo">
-            <img src={logo} alt="logo" width={300} />
+            <img src={logo} alt="logo" width={250} />
           </a>
 
           <ul className="toolbar__navbar--link">
@@ -39,7 +39,7 @@ export const Toolbar = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </aside>
       </nav>
 
       {showSidebar ? (

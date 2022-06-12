@@ -1,4 +1,6 @@
 .toolbar {
+  height: 70px;
+
   &__navbar {
     display: flex;
     justify-content: space-between;
@@ -6,6 +8,7 @@
     width: 100%;
     position: fixed;
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
 
     &--menu {
       display: none;
@@ -37,6 +40,8 @@
 
           &:hover {
             text-decoration: underline;
+            text-decoration-color: var(--bg-primary);
+            text-decoration-style: wavy;
           }
         }
       }
