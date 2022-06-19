@@ -1,9 +1,7 @@
 import React from "react";
+import { EXTERNAL_PROFILE_LINKS_IMAGES } from "../../data/external-profile-links-images.const";
 
 import "./about-me.scss";
-import logoLinkedin from "../../assets/icons/linkedin.svg";
-import logoGithub from "../../assets/icons/github.svg";
-import logoGmail from "../../assets/icons/gmail.svg";
 
 const personalPresentationParagraphs: string[] = [
   `I am a Web and Mobile Frontend developer with experience in the industrial,
@@ -15,20 +13,6 @@ const personalPresentationParagraphs: string[] = [
   // pressure.`,
   `My goal is to reflect all my knowledge for the benefit of the company
   to which I provide my services.`,
-];
-
-const externalLinksAndImages = [
-  {
-    image: logoLinkedin,
-    alt: "linkedin",
-    link: "https://www.linkedin.com/in/anaflavia-diaz/",
-  },
-  {
-    image: logoGithub,
-    alt: "github",
-    link: "https://github.com/AnaflaviaDiaz",
-  },
-  { image: logoGmail, alt: "gmail", link: "mailto:anaflaviadmar@gmail.com" },
 ];
 
 export const AboutMe = () => {
@@ -47,7 +31,7 @@ export const AboutMe = () => {
       </article>
 
       <aside>
-        {externalLinksAndImages.map(({ image, alt, link }) => (
+        {EXTERNAL_PROFILE_LINKS_IMAGES.map(({ image, alt, link }) => (
           <a
             key={alt}
             rel="noreferrer"

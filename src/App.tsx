@@ -1,7 +1,7 @@
 import React from "react";
 
-import { AboutMe } from "./components/AboutMe";
-import { Projects } from "./components/Projects";
+import { AboutMe } from "./pages/AboutMe";
+import { Projects } from "./pages/Projects";
 import { SoftSkills } from "./components/SoftSkills";
 import { TechnicalSkills } from "./components/TechnicalSkills";
 import { Toolbar } from "./components/Toolbar";

@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import "./toolbar.scss";
 import { Menu } from "../../models/menu.interface";
 import { MENUS } from "../../data/menu.cons";
-import logo from "../../assets/adm-lg-logo.png";
+import logo from "../../assets/adm-lg-logo1.png";
 
 const menus: Menu[] = MENUS;
 
