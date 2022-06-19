@@ -5,7 +5,21 @@
   justify-content: center;
   flex-direction: column;
 
+  h1 {
+    color: var(--bg-primary)
+  }
+
   &__personalPresentation {
     text-align: center;
+
+    p {
+      font-size: 1.25em;
+    }
+  }
+
+  &__external {
+    &--link {
+      margin: 8px;
+    }
   }
 }

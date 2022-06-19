@@ -1,5 +1,9 @@
 import React from "react";
+
 import "./about-me.scss";
+import logoLinkedin from "../../assets/icons/linkedin.svg";
+import logoGithub from "../../assets/icons/github.svg";
+import logoGmail from "../../assets/icons/gmail.svg";
 
 const personalPresentationParagraphs: string[] = [
   `I am a Web and Mobile Frontend developer with experience in the industrial,
@@ -13,10 +17,24 @@ const personalPresentationParagraphs: string[] = [
   to which I provide my services.`,
 ];
 
+const externalLinksAndImages = [
+  {
+    image: logoLinkedin,
+    alt: "linkedin",
+    link: "https://www.linkedin.com/in/anaflavia-diaz/",
+  },
+  {
+    image: logoGithub,
+    alt: "github",
+    link: "https://github.com/AnaflaviaDiaz",
+  },
+  { image: logoGmail, alt: "gmail", link: "mailto:anaflaviadmar@gmail.com" },
+];
+
 export const AboutMe = () => {
   return (
-    <aside className="AboutMe">
-      <h1 id="about-me"># About Me</h1>
+    <section className="AboutMe" id="about-me">
+      <h1># About Me</h1>
 
       <article className="AboutMe__personalPresentation">
         {personalPresentationParagraphs.map(
@@ -27,6 +45,20 @@ export const AboutMe = () => {
           )
         )}
       </article>
-    </aside>
+
+      <aside>
+        {externalLinksAndImages.map(({ image, alt, link }) => (
+          <a
+            key={alt}
+            rel="noreferrer"
+            href={link}
+            target="_blank"
+            className="AboutMe__external--link"
+          >
+            <img src={image} alt={alt} width={40} />
+          </a>
+        ))}
+      </aside>
+    </section>
   );
 };
